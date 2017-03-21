@@ -1,6 +1,4 @@
 # SiDPerformance
-[![Build Status](https://travis-ci.org/iLCSoft/SiDPerformance.svg?branch=master)](https://travis-ci.org/iLCSoft/SiDPerformance)
-
 Package containing processors and configurations to determine the performance of the SiD detector model
 
 SiDPerformance is distributed under the [GPLv3 License](http://www.gnu.org/licenses/gpl-3.0.en.html)
