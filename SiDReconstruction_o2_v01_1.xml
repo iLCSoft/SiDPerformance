@@ -57,11 +57,10 @@
   <global>
 
     <!-- USERS: set the input file here -->
-    <parameter name="LCIOInputFiles">
-      ./ddsimOutputFile.slcio </parameter>
+    <parameter name="LCIOInputFiles">./ddsimOutputFile.slcio </parameter>
 
     <!-- minimal gear file, assumed by vertex finding: -->
-    <parameter name="GearXMLFile" value="gear_sid.xml"/>
+    <parameter name="GearXMLFile" value="gear_sid.xml" />
     <!-- Limit the number of processed records (run+evt): -->
     <parameter name="MaxRecordNumber" value="-1" />
     <parameter name="SkipNEvents" value="0" />
