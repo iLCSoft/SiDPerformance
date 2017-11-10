@@ -42,7 +42,10 @@
     <!--  note AR 11/7/16: may need gap correction also -->
     <processor name="MyDDMarlinPandora"/> 
 
-    <!-- ========== monitoring  ========== -->
+    <!-- ======== LCCalibration ========= -->
+    <!-- processor name="MyPfoAnalysis"/ --> 
+     
+    <!-- ========== monitoring  ========= -->
     <!-- processor name="MyProcessor"/ -->
 
     <!-- ========== output  ========== -->
