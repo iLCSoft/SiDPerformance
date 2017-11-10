@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="us-ascii"?>
-<!--##########################################
-   #                                        #
-   #     Example steering file for marlin   #
-   #                                        #
-   ##########################################-->
+<!--############################################
+   #                                           #
+   #   Example Marlin steering file for SiD    #
+   #                                           #
+   #############################################-->
 
 
 <marlin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ilcsoft.desy.de/marlin/marlin.xsd">
@@ -21,7 +21,7 @@
 
     <!-- ========== tracking  ========== -->
     <processor name="MyTruthTrackFinder"/>
-    <!--  <processor name="MyPatternRecognition"/>  -->
+    <!-- processor name="MyPatternRecognition"/  -->
     <!-- processor name="MyConformalTracking"/ -->
     <!-- processor name="MyExtrToTracker_InOut"/ -->
 
@@ -56,7 +56,7 @@
 
   <global>
 
-    <!-- USERS -- set the input file here!!! -->
+    <!-- USERS: set the input file here -->
     <parameter name="LCIOInputFiles">
       ./ddsimOutputFile.slcio </parameter>
 
@@ -74,7 +74,7 @@
   <processor name="InitDD4hep" type="InitializeDD4hep">
     <!--InitializeDD4hep reads a compact xml file and initializes the DD4hep::LCDD object-->
     <!--Name of the DD4hep compact xml file to load-->
-    <!--  USERS -- take care to get the right version of the model!!!  -->
+    <!-- USERS: Take care to get the right version of the model  -->
     <parameter name="DD4hepXMLFile" type="string">./SiD/compact/SiD_o2_v01/SiD_o2_v01.xml
  </parameter>
   </processor>
@@ -100,22 +100,22 @@
 
   <processor name="VertexEndcapDigitiser" type="DDPlanarDigiProcessor">
     <parameter name="SubDetectorName" type="string">SiVertexEndcap </parameter>
-    <!--	 <!--PlanarDigiProcessor creates TrackerHits from SimTrackerHits, smearing them according to the input parameters.-->-->
-    <!--	 <!--whether hits are 1D strip hits-->-->
+    <!--PlanarDigiProcessor creates TrackerHits from SimTrackerHits, smearing them according to the input parameters.-->
+    <!--whether hits are 1D strip hits-->
     <parameter name="IsStrip" type="bool">false </parameter>
-    <!--	 <!--resolution in direction of u-->-->
+    <!--resolution in direction of u-->
     <parameter name="ResolutionU" type="float"> 0.003 0.003 0.003 0.003 0.003 0.003 </parameter>
-    <!--	 <!--resolution in direction of v-->-->
+    <!--resolution in direction of v-->
     <parameter name="ResolutionV" type="float"> 0.003 0.003 0.003 0.003 0.003 0.003  </parameter>
-    <!--	 <!--Name of the Input SimTrackerHit collection-->-->
+    <!--Name of the Input SimTrackerHit collection-->
     <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit">SiVertexEndcapHits </parameter>
-    <!--	 <!--Name of TrackerHit SimTrackHit relation collection-->-->
+    <!--Name of TrackerHit SimTrackHit relation collection-->
     <parameter name="SimTrkHitRelCollection" type="string" lcioOutType="LCRelation">SiVertexEndcapHitsRelations </parameter>
-    <!--	 <!--Name of the TrackerHit output collection-->-->
+    <!--Name of the TrackerHit output collection-->
     <parameter name="TrackerHitCollectionName" type="string" lcioOutType="TrackerHitPlane">SiVertexEndcapHitsPlanes </parameter>
-    <!--	 <!--Try forcing hits on to surface-->-->
+    <!--Try forcing hits on to surface-->
     <!-- parameter name="ForceHitsOntoSurface" type="bool">true </parameter -->
-    <!--	 <!--verbosity level of this processor ("DEBUG0-4,MESSAGE0-4,WARNING0-4,ERROR0-4,SILENT")-->-->
+    <!--verbosity level of this processor ("DEBUG0-4,MESSAGE0-4,WARNING0-4,ERROR0-4,SILENT")-->
     <parameter name="Verbosity" type="string">WARNING </parameter>
   </processor>
 
@@ -139,7 +139,7 @@
     <parameter name="SimTrkHitRelCollection" type="string" lcioOutType="LCRelation">SiTrackerBarrelHitsRelations </parameter>
     <!--Name of the TrackerHit output collection-->
     <parameter name="TrackerHitCollectionName" type="string" lcioOutType="TrackerHitPlane">SiTrackerBarrelHitsPlanes </parameter>
-    <!--	 <!--Try forcing hits on to surface-->-->
+    <!--Try forcing hits on to surface-->
     <parameter name="ForceHitsOntoSurface" type="bool">true </parameter>
     <!--verbosity level of this processor ("DEBUG0-4,MESSAGE0-4,WARNING0-4,ERROR0-4,SILENT")-->
     <parameter name="Verbosity" type="string">WARNING</parameter>
