@@ -60,10 +60,11 @@
 
     <!-- USERS: set the input file here -->
     <parameter name="LCIOInputFiles">
-      ./ddsimOutputFile.slcio </parameter>
+      ./ddsimOutputFile.slcio 
+    </parameter>
 
     <!-- minimal gear file, assumed by vertex finding: -->
-    <parameter name="GearXMLFile" value="gear_sid.xml"/>
+    <parameter name="GearXMLFile" value="gear_SiD_o2_v02.xml"/>
     <!-- Limit the number of processed records (run+evt): -->
     <parameter name="MaxRecordNumber" value="-1" />
     <parameter name="SkipNEvents" value="0" />
@@ -77,8 +78,7 @@
     <!--InitializeDD4hep reads a compact xml file and initializes the DD4hep::LCDD object-->
     <!--Name of the DD4hep compact xml file to load-->
     <!-- USERS: Take care to get the right version of the model  -->
-    <parameter name="DD4hepXMLFile" type="string">./SiD/compact/SiD_o2_v01/SiD_o2_v01.xml
- </parameter>
+    <parameter name="DD4hepXMLFile" type="string">./SiD/compact/SiD_o2_v02/SiD_o2_v02.xml</parameter>
   </processor>
 
   <processor name="VertexBarrelDigitiser" type="DDPlanarDigiProcessor">
