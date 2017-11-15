@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="us-ascii"?>
-<!--############################################
-   #                                           #
-   #   Example Marlin steering file for SiD    #
-   #                                           #
-   #############################################-->
+<!--################################################
+   #                                               #
+   #   Example Marlin steering file for SiD with   #
+   #    SiD_o2_v02 calibration constants added     #
+   #      by protopop@cern.ch on 15 Nov 2017       #
+   #                                               #
+   #################################################-->
 
 
 <marlin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ilcsoft.desy.de/marlin/marlin.xsd">
@@ -341,7 +343,7 @@
     <parameter name="outputHitCollections"> HCalBarrelReco </parameter>
     <parameter name="outputRelationCollections"> HCalBarrelRecoRelation </parameter>
     <parameter name="calibration_layergroups"> 100 </parameter>
-    <parameter name="calibration_factorsMipGev">0.0451936548109</parameter>
+    <parameter name="calibration_factorsMipGev">0.0222784978481</parameter>
     <parameter name="ppd_mipPe"> 15 </parameter>
     <parameter name="ppd_npix"> 1600 </parameter>
     <parameter name="CellIDLayerString"> layer </parameter>
@@ -377,7 +379,7 @@
     <parameter name="outputHitCollections"> HCalEndcapReco </parameter>
     <parameter name="outputRelationCollections"> HCalEndcapRecoRelation </parameter>
     <parameter name="calibration_layergroups"> 100 </parameter>
-    <parameter name="calibration_factorsMipGev">0.0433370693874</parameter>
+    <parameter name="calibration_factorsMipGev">0.021572413198</parameter>
     <parameter name="ppd_mipPe"> 15 </parameter>
     <parameter name="ppd_npix"> 1600 </parameter>
     <parameter name="CellIDLayerString"> layer </parameter>
@@ -424,7 +426,7 @@
     <parameter name="LHCalCaloHitCollections" type="StringVec"> </parameter>
     <parameter name="MuonCaloHitCollections" type="StringVec">MUON</parameter>
     <parameter name="MCParticleCollections" type="StringVec">MCParticle</parameter>
-    <parameter name="RelCaloHitCollections" type="StringVec">EcalBarrelRecoRelation EcalEndcapRecoRelation HcalBarrelRecoRelation HcalEndcapRecoRelation RelationMuonHit</parameter>
+    <parameter name="RelCaloHitCollections" type="StringVec">EcalBarrelRecoRelation EcalEndcapRecoRelation HcalBarrelRecoRelation HcalEndcapRecoRelation MuonHitRelations</parameter>
     <parameter name="RelTrackCollections" type="StringVec">SiTrackRelations</parameter>
     <parameter name="KinkVertexCollections" type="StringVec">KinkVertices</parameter>
     <parameter name="ProngVertexCollections" type="StringVec">ProngVertices</parameter>
@@ -434,15 +436,16 @@
     <parameter name="PFOCollectionName" type="String">PandoraPFOs</parameter>
     <!-- Calibration constants -->
     <parameter name="ECalToMipCalibration">188.679</parameter>
-    <parameter name="HCalToMipCalibration">21.8818</parameter>
+    <parameter name="HCalToMipCalibration">43.6681</parameter>
     <parameter name="ECalMipThreshold" type="float">0.5</parameter>
     <parameter name="HCalMipThreshold" type="float">0.3</parameter>
     <parameter name="ECalToEMGeVCalibration">1.0043</parameter>
     <parameter name="HCalToEMGeVCalibration">1.0043</parameter>
-    <parameter name="ECalToHadGeVCalibrationBarrel">2.34769133862</parameter>
-    <parameter name="ECalToHadGeVCalibrationEndCap">2.34769133862</parameter>
-    <parameter name="HCalToHadGeVCalibration">1.1796329568</parameter>
-    <parameter name="MuonToMipCalibration">1000.0</parameter>
+    <parameter name="ECalToHadGeVCalibrationBarrel">1.05683099202</parameter>
+    <parameter name="ECalToHadGeVCalibrationEndCap">1.05683099202</parameter>
+    <parameter name="HCalToHadGeVCalibration">1.06709005048</parameter>
+    <!-- Old value was left here, as calibration value 1000. cannot be correct -->
+    <parameter name="MuonToMipCalibration">10.0</parameter>
     <parameter name="DigitalMuonHits" type="int">0</parameter>
     <parameter name="MaxHCalHitHadronicEnergy" type="float">1</parameter> 
     <!--Whether to calculate track states manually, rather than copy stored fitter values-->
