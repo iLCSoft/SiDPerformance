@@ -343,7 +343,7 @@
     <parameter name="outputHitCollections"> HCalBarrelReco </parameter>
     <parameter name="outputRelationCollections"> HCalBarrelRecoRelation </parameter>
     <parameter name="calibration_layergroups"> 100 </parameter>
-    <parameter name="calibration_factorsMipGev">0.0222784978481</parameter>
+    <parameter name="calibration_factorsMipGev">0.022065151036</parameter>
     <parameter name="ppd_mipPe"> 15 </parameter>
     <parameter name="ppd_npix"> 1600 </parameter>
     <parameter name="CellIDLayerString"> layer </parameter>
@@ -379,7 +379,7 @@
     <parameter name="outputHitCollections"> HCalEndcapReco </parameter>
     <parameter name="outputRelationCollections"> HCalEndcapRecoRelation </parameter>
     <parameter name="calibration_layergroups"> 100 </parameter>
-    <parameter name="calibration_factorsMipGev">0.021572413198</parameter>
+    <parameter name="calibration_factorsMipGev">0.0215326481886</parameter>
     <parameter name="ppd_mipPe"> 15 </parameter>
     <parameter name="ppd_npix"> 1600 </parameter>
     <parameter name="CellIDLayerString"> layer </parameter>
@@ -436,16 +436,16 @@
     <parameter name="PFOCollectionName" type="String">PandoraPFOs</parameter>
     <!-- Calibration constants -->
     <parameter name="ECalToMipCalibration">188.679</parameter>
-    <parameter name="HCalToMipCalibration">43.6681</parameter>
+    <parameter name="HCalToMipCalibration">45.2489</parameter>
     <parameter name="ECalMipThreshold" type="float">0.5</parameter>
     <parameter name="HCalMipThreshold" type="float">0.3</parameter>
     <parameter name="ECalToEMGeVCalibration">1.0043</parameter>
     <parameter name="HCalToEMGeVCalibration">1.0043</parameter>
-    <parameter name="ECalToHadGeVCalibrationBarrel">1.05683099202</parameter>
-    <parameter name="ECalToHadGeVCalibrationEndCap">1.05683099202</parameter>
-    <parameter name="HCalToHadGeVCalibration">1.06709005048</parameter>
+    <parameter name="ECalToHadGeVCalibrationBarrel">1.04743640664</parameter>
+    <parameter name="ECalToHadGeVCalibrationEndCap">1.04743640664</parameter>
+    <parameter name="HCalToHadGeVCalibration">1.08926196809</parameter>
     <!-- Old value was left here, as calibration value 1000. cannot be correct -->
-    <parameter name="MuonToMipCalibration">10.0</parameter>
+    <parameter name="MuonToMipCalibration">18348.6</parameter>
     <parameter name="DigitalMuonHits" type="int">0</parameter>
     <parameter name="MaxHCalHitHadronicEnergy" type="float">1</parameter> 
     <!--Whether to calculate track states manually, rather than copy stored fitter values-->
