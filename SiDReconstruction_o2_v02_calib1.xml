@@ -397,8 +397,7 @@
     <!-- maximum hit energy for a MUON hit -->
     <parameter name="MaxHitEnergyMUON" type="float">2.0</parameter>
     <!--MUON Collection Names-->
-    <parameter name="MUONCollections" type="StringVec">
-      MuonBarrelHits MuonEndcapHits</parameter>
+    <parameter name="MUONCollections" type="StringVec">MuonBarrelHits MuonEndcapHits</parameter>
     <!--MUON Collection of real Hits-->
     <parameter name="MUONOutputCollection" type="string">MUON </parameter>
     <!--Threshold for MUON Hits in GeV-->
@@ -444,7 +443,6 @@
     <parameter name="ECalToHadGeVCalibrationBarrel">1.04743640664</parameter>
     <parameter name="ECalToHadGeVCalibrationEndCap">1.04743640664</parameter>
     <parameter name="HCalToHadGeVCalibration">1.08926196809</parameter>
-    <!-- Old value was left here, as calibration value 1000. cannot be correct -->
     <parameter name="MuonToMipCalibration">18348.6</parameter>
     <parameter name="DigitalMuonHits" type="int">0</parameter>
     <parameter name="MaxHCalHitHadronicEnergy" type="float">1</parameter> 
